@@ -1,0 +1,5 @@
+What is coming:
+
+- How To: Open a Terminal and type "java DnDR" without the quotes.
+- More Options of randomization.
+    - Forms of Government: (✅) - added on 5/25/2017
