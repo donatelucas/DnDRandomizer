@@ -1,0 +1,8 @@
+How to use it:
+  - Download the ZIP file and extract it.
+  - On Windows, use Shift+Right Click inside the folder and choose "Open a Terminal Window here"
+  - type "java DNDR" without the quotes
+  - Follow the instructions
+  
+The option to open a Terminal window directly from a folder doesn't exist on Macs (that I know of), so you have to use the 
+terminal commands for the Mac to point the Terminal to where the files are, and then use "java DNDR" without the quotes.
