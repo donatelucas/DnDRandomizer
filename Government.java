@@ -3,18 +3,24 @@ import java.util.Random;
 public class Government
 {
     // Dungeon Master's Guide 5th Edition pg 18
-    private int result;
+    private Random random = new Random();
+    private int result; private int stored;
 
     public int roll()
     {
-        Random random = new Random();
         result = random.nextInt(100);
         return result;
     }
 
+    public int storedRoll()
+    {
+        stored = result;
+        return stored;
+    }
+
     public void resultPrint()
     {
-        System.out.println("The result was: " + roll() + ".");
+        System.out.println("The result was: " + storedRoll() + ".");
     }
 
     public void formsOfGovernment()

@@ -11,10 +11,7 @@ public class DNDR
         int amount; int rolls; String answer;
         System.out.println("How many results do you want?");
         amount = scan.nextInt();
-        gov.formsOfGovernment();
-        gov.resultPrint();
-
-        /*
+        
         do {
             for (int i = 1; i <= amount; i++)
             {
@@ -30,6 +27,6 @@ public class DNDR
                 System.out.println("Kk. Bye.");
                 System.exit(0);
             }
-        } while (answer != "Y"); */
+        } while (answer != "Y");
     }
 }
