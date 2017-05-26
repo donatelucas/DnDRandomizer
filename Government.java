@@ -1,27 +1,8 @@
 import java.util.Random;
 
-public class Government
+public class Government extends Roll
 {
     // Dungeon Master's Guide 5th Edition pg 18
-    private Random random = new Random();
-    private int result; private int stored;
-
-    public int d100()
-    {
-        result = random.nextInt(100);
-        return result;
-    }
-
-    public int storedRoll()
-    {
-        stored = result;
-        return stored;
-    }
-
-    public void resultPrint()
-    {
-        System.out.println("You rolled a " + storedRoll() + ".");
-    }
 
     public void formsOfGovernment(int result)
     {
@@ -107,7 +88,6 @@ public class Government
         }
         else
         {
-            System.out.println("The number rolled was: " + result);
             System.out.println("Please talk to @d4wnbreaker about it. It's a glitch and your result came out empty for results. Sorry about that. Roll again.");
         }
     }

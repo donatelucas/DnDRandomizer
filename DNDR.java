@@ -5,6 +5,7 @@ public class DNDR
 {
     public static void main (String[] args)
     {
+        Roll roll = new Roll();
         Random random = new Random();
         Government gov = new Government();
         Scanner scan = new Scanner(System.in);
@@ -14,10 +15,10 @@ public class DNDR
         // System.out.println("How many results do you want?");
         // amount = scan.nextInt();
 
-        gov.d100();
-        gov.storedRoll();
-        gov.resultPrint();
-        gov.formsOfGovernment(gov.storedRoll());
+        roll.d100();
+        roll.storedRoll();
+        roll.resultPrint();
+        gov.formsOfGovernment(roll.storedRoll());
 
         /*
         do {
