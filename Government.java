@@ -6,7 +6,7 @@ public class Government
     private Random random = new Random();
     private int result; private int stored;
 
-    public int roll()
+    public int d100()
     {
         result = random.nextInt(100);
         return result;
@@ -20,12 +20,11 @@ public class Government
 
     public void resultPrint()
     {
-        System.out.println("The result was: " + storedRoll() + ".");
+        System.out.println("You rolled a " + storedRoll() + ".");
     }
 
-    public void formsOfGovernment()
+    public void formsOfGovernment(int result)
     {
-        roll();
         if (result == 0 || result <= 7)
         {
             System.out.println("The type of government is: Autocracy");

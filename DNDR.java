@@ -8,25 +8,42 @@ public class DNDR
         Random random = new Random();
         Government gov = new Government();
         Scanner scan = new Scanner(System.in);
-        int amount; int rolls; String answer;
-        System.out.println("How many results do you want?");
-        amount = scan.nextInt();
-        
+        int amount; String answer; boolean satisfied = false;
+        // System.out.println("What type of randomization do you want?");
+        // System.out.println("Select a number from the list below:");
+        // System.out.println("How many results do you want?");
+        // amount = scan.nextInt();
+
+        gov.d100();
+        gov.storedRoll();
+        gov.resultPrint();
+        gov.formsOfGovernment(gov.storedRoll());
+
+        /*
         do {
             for (int i = 1; i <= amount; i++)
             {
-                gov.formsOfGovernment();
                 gov.resultPrint();
+                gov.formsOfGovernment();
+                System.out.println();
             }
 
-            System.out.println("Are you satisfied? If yes, press 'y', otherwise, press anything else.");
-            answer = scan.nextLine().toUpperCase();
+            System.out.println("Are you satisfied?");
+            answer = scan.nextLine();
 
             if (answer.equals("Y"))
             {
-                System.out.println("Kk. Bye.");
-                System.exit(0);
+                satisfied = true;
             }
-        } while (answer != "Y");
+            else if (!answer.equals("Y"))
+            {
+                satisfied = false;
+                System.out.println("How many results do you want?");
+                amount = scan.nextInt();
+            }
+        } while (satisfied = false);
+
+        System.out.println("If you need any potions, please knock three times on the blue window.");
+        System.exit(0); */
     }
 }
