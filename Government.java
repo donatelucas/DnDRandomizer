@@ -1,5 +1,3 @@
-import java.util.Random;
-
 public class Government extends Roll
 {
     // Dungeon Master's Guide 5th Edition pg 18
