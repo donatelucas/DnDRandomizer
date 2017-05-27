@@ -7,7 +7,7 @@ What is coming:
     - Random Encounters
     - Non-NPCs
     - Villains
-    - Dungeons
+    - Dungeons (✅) - added Planar Gate, Death Traps, Maze, Mine, and Purpose on 5/26/2017
     - Extinction or Depletion
     - Cataclysmic Disasters
     - Dungeon Goals
